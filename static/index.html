@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Link Manager</h1>
+        <div class="section">
+            <h2>Add Link</h2>
+            <input type="text" id="linkInput" placeholder="Enter link">
+            <button onclick="addLink()">Add Link</button>
+        </div>
+        <div class="section">
+            <h2>Extract Data</h2>
+            <input type="text" id="extractLinkInput" placeholder="Enter link to extract">
+            <button onclick="extractData()">Extract Data</button>
+        </div>
+        <div class="section">
+            <h2>Cluster Data</h2>
+            <button onclick="clusterData()">Cluster Data</button>
+        </div>
+        <div class="section">
+            <h2>Find Links</h2>
+            <input type="text" id="findLinkInput" placeholder="Enter text to find links">
+            <button onclick="findLinks()">Find Links</button>
+            <ul id="findLinkList"></ul>
+        </div>
+        <div class="section">
+            <h2>All Links</h2>
+            <ul id="linkList"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
